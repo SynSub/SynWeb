@@ -1,0 +1,563 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+@font-face { 
+	font-family:"Comic Sans MS", cursive, sans-serif; 
+} 
+
+@font-face { 
+	font-family:"Comic Sans MS", cursive, sans-serif;
+} 
+
+html { 
+   background-color: rgba(255, 255, 255, 1.0);
+  height: 100%;
+    background-size:     cover;
+    background-attachment: fixed;
+    background-repeat:   no-repeat;
+    background-position: center center;
+	overflow-wrap: break-word;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, sidebar_container3 section { 
+  display:block;
+}
+
+body { 
+  color: #14171a;
+  background:transparent;
+}
+
+p { 
+  font: italic 18px Roboto,arial,sans-serif;
+  padding: 0.6% 0.6% 0.6% 0.6%;
+  line-height: 1.6em;
+}
+
+img { 
+  border: 0;
+}
+
+h1 { 
+  padding: 0.6% 0.6% 0.6% 0.6%;
+  color: #9f9f9f;
+  font: bold 250% arial, sans-serif;
+}
+
+h2 { 
+  padding: 0.6% 0.6% 0.6% 0.6%;
+  color: #14171a;
+  font: bold 250% arial, sans-serif;
+}
+
+h3 { 
+  color: #3A5ECA;
+  font: bold 100% arial, sans-serif;
+}
+h4 { 
+  padding: 0.6% 0.6% 0.6% 0.6%;
+  color: #000;
+  font: bold 120% arial, sans-serif;
+}
+
+em { 
+  color: #14171a;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.sidebar { 
+    position: fixed;
+	z-index:2;
+    top: 1%;
+    right: 5%;
+    float: right;
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0% 0% 0% 0%;
+  opacity: 1.0;
+}
+
+.sidebarheadblock { 
+   -moz-box-shadow:    inset 0 0 20px DimGray;
+   -webkit-box-shadow: inset 0 0 20px DimGray;
+   box-shadow:         inset 0 0 20px DimGray;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+display: block;
+  position: static;
+    margin: 0.5% 0.1% 0.5% 0.1%;
+    width: 90%;
+   background:#2b2924;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+  padding: 5px 1px 5px 1px;
+  opacity: 1.0;
+ z-index:2
+}
+
+.sidebarhead { 
+   -moz-box-shadow:    inset 0 0 20px DimGray;
+   -webkit-box-shadow: inset 0 0 20px DimGray;
+   box-shadow:         inset 0 0 20px DimGray;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+color:#3A5ECA;
+    margin: 0.6% 0.6% 0.6% 0.6%;
+    width: auto;
+   background-color: rgba(255, 255, 255, 0.9);
+border: 2px solid #e5eeff;
+  -webkit-border-radius: 2px 2px 2px 2px; 
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  padding: 5px 5px 5px 5px;
+  opacity: 1.0;
+}
+.sidebarvideo { 
+   -moz-box-shadow:    inset 0 0 20px DimGray;
+   -webkit-box-shadow: inset 0 0 20px DimGray;
+   box-shadow:         inset 0 0 20px DimGray;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+    margin: 0.6% 0.6% 0.6% 0.6%;
+    width: 80%;
+    height: 460px;
+   background:Black;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+
+  opacity: 1.0;
+}
+.sidebarvideosmall { 
+    margin: 0.1% 0.1% 0.1% 0.1%;
+    padding: 0.0% 0.0% 0.0% 0.0%;
+    width: 32.6%;
+   background:Black;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+  opacity: 1.0;
+display:inline-block;
+}
+
+.stubsize { 
+    margin: 0.1% 0.1% 0.1% 0.1%;
+    padding: 0.0% 0.0% 0.0% 0.0%;
+    width: 70%;
+   background:transparent;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 3px 3px 3px 3px; 
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  opacity: 1.0;
+display:inline-block;
+}
+
+.sidebarheadvideo { 
+  -moz-box-shadow:    inset 0 0 20px #14171a;
+  -webkit-box-shadow: inset 0 0 20px #14171a;
+  box-shadow:         inset 0 0 20px #14171a;
+  margin: 0.2% 0.6% 0.2% 0.6%;
+  width: auto;
+  background-color: white;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+  padding: 1px 1px 1px 1px;
+  opacity: 1.0;
+}
+
+.sidebarheadcolor { 
+
+   -moz-box-shadow:    inset 0 0 20px #DimGray;
+   -webkit-box-shadow: inset 0 0 20px #DimGray;
+   box-shadow:         inset 0 0 20px #DimGray;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 10px 2px 10px 2px;
+    width: auto;
+   background:#d9d9d9;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+  padding: 5px 5px 5px 5px;
+  opacity: 1.0;
+
+	line-height:50%;
+}
+
+.dockit {
+  animation-name: wobble;
+    animation-timing-function: ease-in;
+    animation-timing-function: fade-in;
+    animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+table { 
+  margin: 0.1% 0.1% 0.1% 0.1%;
+  width: 90%;
+border: transparent;
+align: center;
+}
+
+table tr th, table tr td { 
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #3A5ECA;
+  padding: 9px 9px;
+  text-align: left;
+border: 1px solid #e5eeff;
+-webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px;
+box-shadow: 1px 1px 12px #fff, -1px -1px 12px #fff, 1px 1px 12px #000000;
+}
+  
+table tr td { 
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #3A5ECA;
+}
+.table-results {
+width:99%;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {  border: 2px solid #e8e8e8;    -moz-box-shadow:    inset 0 0 10px #14171a;
+   -webkit-box-shadow: inset 0 0 10px #14171a;
+   box-shadow:         inset 0 0 10px #14171a;}
+    100%  {  border: 2px solid #3A5ECA;    -moz-box-shadow:    inset 0 0 10px #000;
+   -webkit-box-shadow: inset 0 0 10px #3A5ECA;
+   box-shadow:         inset 0 0 10px #3A5ECA;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {  border: 2px solid #e8e8e8;}
+    100%  {  border: 2px solid #3A5ECA;}
+}
+
+::-webkit-scrollbar
+{
+  width: 20px;  /* for vertical scrollbars */
+  height: 0px; /* for horizontal scrollbars */
+background-color: transparent;
+}
+
+::-webkit-scrollbar-track
+{
+   background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb
+{
+background-color: #3A5ECA;
+opacity: 0.5;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+}
+::-webkit-scrollbar-button {
+background-color: #3A5ECA;
+    background-size: 100%;
+    height: 20px;
+    width: 20px;
+    -webkit-box-shadow: inset 1px 1px 1px #3A5ECA;
+opacity: 0.5;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+}
+::-webkit-scrollbar-button:hover {
+    -webkit-box-shadow: inset 3px 3px 3px #FFFFFF;
+opacity: 1.0;
+}
+
+div {
+  animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    animation-timing-function: fade-in;
+    animation-duration: 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateY(600px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; }
+ }
+
+a, hover { 
+  font: italic 100% arial, sans-serif;
+  text-decoration: none;
+  outline: none;
+  color: #6687e7;
+}
+
+a:hover { 
+  color: RoyalBlue;
+}
+  .scroller {
+    overflow-x: scroll;
+    height: 95%;
+	scrollbar-color: dark;
+  }
+  .scroller1 {
+    overflow-x: scroll;
+    height: 85%;
+  }
+
+iframe1 {
+    display: block;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+}
+.button {
+cursor: pointer;
+}
+.input {
+cursor: pointer;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 54.10%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fittobox {                /* give fit to box an aspect ratio */
+    display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0;
+    width: 100%;           /* take up full width available */
+    padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px;           /* don't want it to expand beyond padding */
+    position: relative;    /* allow for absolute positioning of child elements */
+}
+
+.fittobox > iframe {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.fittobox > img {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.fittobox1 {                /* give fit to box an aspect ratio */
+    display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0;
+    width: 100%;           /* take up full width available */
+    padding-top: 110.8%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px;           /* don't want it to expand beyond padding */
+    position: relative;    /* allow for absolute positioning of child elements */
+}
+
+.fittobox1 > iframe {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.fittobox-multi {                /* give fit to box an aspect ratio */
+    display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0;
+    width: 100%;           /* take up full width available */
+    padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px;           /* don't want it to expand beyond padding */
+    position: relative;    /* allow for absolute positioning of child elements */
+}
+
+.fittobox-multi > iframe {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.fittobox1-multi {                /* give fit to box an aspect ratio */
+    display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0;
+    width: 100%;           /* take up full width available */
+    padding-top: 110.8%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px;           /* don't want it to expand beyond padding */
+    position: relative;    /* allow for absolute positioning of child elements */
+}
+
+.fittobox1-multi > iframe {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#btn-submit-new1 {
+   -moz-box-shadow:    inset 0 0 10px #3A5ECA;
+   -webkit-box-shadow: inset 0 0 10px #3A5ECA;
+   box-shadow:         inset 0 0 10px #3A5ECA;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 1px auto 1px auto;
+  font: 60% arial, sans-serif;
+    width: 100%;
+    height: 80px;
+	color: #3A5ECA;
+   background: #e8e8e8;
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 12px 12px 12px 12px; 
+  -moz-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+  padding: 5px 1px 5px 10px;
+  opacity: 0.8;
+  line-height: 20px;
+cursor: pointer;
+text-align: left;
+}
+#btn-submit-new1:hover { 
+  opacity: 0.9;
+   -moz-box-shadow:    inset 0 0 10px #14171a;
+   -webkit-box-shadow: inset 0 0 10px #14171a;
+   box-shadow:         inset 0 0 10px #14171a;
+    -webkit-animation: myfirst 1.5s infinite alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 1.5s infinite alternate;
+}
+
+#btn-submit-search {
+   -moz-box-shadow:    inset 0 0 10px #14171a;
+   -webkit-box-shadow: inset 0 0 10px #14171a;
+   box-shadow:         inset 0 0 10px #14171a;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 1px auto 1px auto;
+    width: 60%;
+   background: rgb(255, 255, 255);
+   background: rgba(255, 255, 255, 1.0);
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 6px 6px 6px 6px; 
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px 5px 5px 5px;
+  opacity: 1.0;
+  line-spacing: 10px;line-height:200%;
+}
+#btn-submit-search1 {
+   -moz-box-shadow:    inset 0 0 10px #14171a;
+   -webkit-box-shadow: inset 0 0 10px #14171a;
+   box-shadow:         inset 0 0 10px #14171a;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 1px auto 1px auto;
+    width: 5%;
+   background: rgb(255, 255, 255);
+   background: rgba(255, 255, 255, 1.0);
+  border: 2px solid #e8e8e8;
+  -webkit-border-radius: 6px 6px 6px 6px; 
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px 5px 5px 5px;
+  opacity: 1.0;
+  line-spacing: 10px;line-height:200%;
+cursor: pointer;
+}
+
+.youtube {
+    background-color: #000;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: RoyalBlue;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #000;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
