@@ -408,8 +408,8 @@ if (!empty($twitKey)){
 		if (!empty($myCharTwit)) {
 			echo "<table border='1' bgcolor='transparent' font color='#fff' size='6' class='table-results' style='width:99.8%; table-layout:fixed;'><th><i style='float:right; width:98%;'><h1 style='float:right;'><font size='6' style='font:bold 100% arial, sans-serif;' color='#213875'><a href='https://twitter.com/".$myCharTwit."' title='".$myCharTwit." on Twitter' target='_blank' style='color:#38A1F3; text-shadow: 1px 1px 1px #000;'>@".$myCharTwit."</a></font></h1></i></th>";
 			$settings = array(
-				'consumer_key' => '$twitKey',
-				'consumer_secret' => '$twitSecret',
+				'consumer_key' => $twitKey,
+				'consumer_secret' => $twitSecret,
 				'oauth_access_token' => '',
 				'oauth_access_token_secret' => '',
 				);
