@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Options +FollowSymlinks
+RewriteBase /
+DirectoryIndex index.php
+ErrorDocument 400 /404.php
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+# ---------------------------------------
+# BEGIN htaccess pretection
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# END htaccess pretection
+# ---------------------------------------
+
+</IfModule>
