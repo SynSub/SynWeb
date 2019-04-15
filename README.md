@@ -51,6 +51,6 @@ If you would like to support the project development, you can do so with any of 
 - Share the platform far and wide.
 
 Hire my services:
-I can assist on a one-to-one basis for individual requests and requirements.
+I can assist on a one-to-one basis for individual requests and requirements - staff@synsub.com
 I am very familar with the YouTube Data API V3, PHP, HTML, CSS and MySQL database interaction.
 I can custom design modules for the platform per request.
