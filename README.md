@@ -1,7 +1,9 @@
 # SynWeb
-A sharing platform without biased algoritms.
+An opensource sharing platform without biased algoritms.
 
 SynWeb 1.3 Readme File
+
+Visit the live version @ https://synsub.com
 
 Software License - https://opensource.org/licenses/MIT
 
