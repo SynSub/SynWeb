@@ -1,5 +1,5 @@
 # SynWeb
-An opensource sharing platform without biased algoritms.
+An opensource sharing platform without biased algorithms.
 
 SynWeb 1.3 Readme File
 
