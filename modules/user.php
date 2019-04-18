@@ -227,6 +227,8 @@ if (!empty($myCharYT)) {
 	else {
 		die();
 		}
+	$iA = 0;
+	$iB = 0;
 	$liveEnabled = true;
 	if (!empty($api_key)){
 		$selectedKey = $api_key;
@@ -338,6 +340,7 @@ if (!empty($myCharYT)) {
 			$arr_list1 = getYTList1($url1);
 			foreach ($arr_list1 as $alist1) {
 				foreach ($alist1 as $list1) {
+					$iA = $iA+1;
 					$aVLink = ($list1->id->videoId);
 					$aVTitle = ($list1->snippet->title);
 					$aVTitle = htmlspecialchars($aVTitle);
@@ -357,7 +360,10 @@ if (!empty($myCharYT)) {
 					else {
 						echo "width:auto; height:34.5vh;";
 						}
-					echo " border:2px solid RoyalBlue; padding:0px; -webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px; box-shadow: 1px 1px 12px #000000, -1px -1px 12px #000000, 1px 1px 12px #000000;' id='btn-submit-search'></img></a> &nbsp; ";
+					echo " border:2px solid RoyalBlue; padding:0px; -webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px; box-shadow: 1px 1px 12px #000000, -1px -1px 12px #000000, 1px 1px 12px #000000;' id='btn-submit-search'></img></a>";
+					if ($iA === 3 || $iA === 6 || $iA === 9 || $iA === 12 || $iA === 15 || $iA === 18 || $iA === 21 || $iA === 24 || $iA === 27 || $iA === 30 || $iA === 33 || $iA === 36 || $iA === 39 || $iA === 42 || $iA === 45){
+						echo "<br />";
+						}
 					}
 				}
 			echo "</font></th></table>";
@@ -374,6 +380,7 @@ if (!empty($myCharYT)) {
 		$arr_list = getYTList($url);
 		foreach ($arr_list as $alist) {
 			foreach ($alist as $list) {
+				$iB = $iB+1;
 				$dumpId = ($list->id->videoId);
 				$dumpTitle = ($list->snippet->title);
 				$dumpTitle = str_replace  ("'", "", $dumpTitle);
@@ -397,7 +404,10 @@ if (!empty($myCharYT)) {
 				else {
 					echo "width:auto; height:34.5vh;";
 					}
-				echo " border:2px solid #fff; padding:0px; -webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px; box-shadow: 1px 1px 12px #fff, -1px -1px 12px #fff, 1px 1px 12px #fff;' id='btn-submit-search'></img></a> &nbsp; ";
+				echo " border:2px solid #fff; padding:0px; -webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px; box-shadow: 1px 1px 12px #fff, -1px -1px 12px #fff, 1px 1px 12px #fff;' id='btn-submit-search'></img></a>";
+				if ($iB === 3 || $iB === 6 || $iB === 9 || $iB === 12 || $iB === 15 || $iB === 18 || $iB === 21 || $iB === 24 || $iB === 27 || $iB === 30 || $iB === 33 || $iB === 36 || $iB === 39 || $iB === 42 || $iB === 45){
+					echo "<br />";
+					}
 				}
 			}
 		echo "</font></th></table>";
